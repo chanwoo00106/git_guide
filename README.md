@@ -23,3 +23,5 @@
 > git remote add <등록 이름(대부분 origin으로 함)> <원격 저장소 주소>
 
 이렇게 명령어를 사용하면 내PC의 로컬 git 프로젝트와 원격 저장소가 연동된다
+
+[더 자세한 내용](https://rogerdudler.github.io/git-guide/index.ko.html)
