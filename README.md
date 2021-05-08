@@ -25,3 +25,9 @@
 이렇게 명령어를 사용하면 내PC의 로컬 git 프로젝트와 원격 저장소가 연동된다
 
 [더 자세한 내용](https://rogerdudler.github.io/git-guide/index.ko.html)
+
+# 기존 저장소에 올리는 법
+
+> git remote add origin <주소>
+> git branch -M master
+> git push -u origin master
