@@ -12,7 +12,22 @@
 
 이렇게 하면 변경된 파일이 <strong>HEAD</strong>에 반영이 됨
 
+# 커밋 취소
+
+아래와 같이 적어주면 가장 최근 커밋을 취소해 준다
+
+> git log HEAD^
+
+가끔 가다 '^' 문자를 필터링 하는경우가 있어서 아래와 같이 적어준다
+
+> git reset --soft HEAD~1
+
+또는
+
+> git log "HEAD^"
+
 # 변경된 내용 올리기
+
 현재 변경된 내용은 아직 로컬 저장소에 있어서
 이 내용을 github에 올려준다
 
@@ -33,8 +48,19 @@
 > git branch -M master
 
 > git push -u origin master
-
+---
 가끔가다 기존 파일이 손상돼서 막는 경우가 있는데
 그건 아래와 같이 강제 커밋을 하면 된다
 
 > git push origin +master
+---
+주소를 적다 갑자기 아래와 같은 오류가 뜰 수 있는데
+
+```
+fatal: remote origin already exists.
+```
+
+이건 이미 remote가 되어 있어서 그런다.
+remote를 취소하고 다시 주소를 add해주면 된다
+
+> git remote rm origin
