@@ -29,5 +29,7 @@
 # 기존 저장소에 올리는 법
 
 > git remote add origin <주소>
+
 > git branch -M master
+
 > git push -u origin master
