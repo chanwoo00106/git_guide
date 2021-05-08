@@ -33,3 +33,8 @@
 > git branch -M master
 
 > git push -u origin master
+
+가끔가다 기존 파일이 손상돼서 막는 경우가 있는데
+그건 아래와 같이 강제 커밋을 하면 된다
+
+> git push origin +master
