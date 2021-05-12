@@ -50,6 +50,7 @@
 이렇게 명령어를 사용하면 내PC의 로컬 git 프로젝트와 원격 저장소가 연동된다
 
 [더 자세한 내용](https://rogerdudler.github.io/git-guide/index.ko.html)
+[더 자세한 내용2](https://webdevtechblog.com/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95-github-tutorials-4a63f31bb6a5)
 
 # 기존 저장소에 올리는 법
 
