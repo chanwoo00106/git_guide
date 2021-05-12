@@ -57,7 +57,7 @@
 
 > git branch -M master
 
-> git push -u origin master
+> git push
 
 ---
 주소를 적다 갑자기 아래와 같은 오류가 뜰 수 있는데
