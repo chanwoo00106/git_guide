@@ -73,7 +73,7 @@ remote를 취소하고 다시 주소를 add해주면 된다
 > git remote rm origin
 
 ---
-가끔가다 기존 파일이 손상돼서 막는 경우가 있는데
-그건 아래와 같이 강제 커밋을 하면 된다
+### err 1
+```! [rejected]        master -> master (fetch first)```
 
-> git push origin +master
+[해결 방법](https://github.com/chanwoo00106/git_guide/blob/master/push_error.md)
