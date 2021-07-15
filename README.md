@@ -28,39 +28,39 @@
 
 # 변경된 내용 올리기
 
-현재 변경된 내용은 아직 로컬 저장소에 있어서
-이 내용을 github에 올려준다
+처음 올리는 경우에는 아래와 같이 저장소를 등록해 주고
 
-> git push origin master
+```
+git remote add origin <git 주소>
+```
 
-생성한 github와 연동하기 위해서는 먼저 해당 원격 저장소를 프로젝트에 등록시켜야한다
+그 다음부터는 아래와 같이만 해 주면 된다
 
-*origin: 원격 저장소의 주소
+```
+git push
+```
 
-*master: 현재 브랜치
+가끔 push 하다가 rejected 어쩌고 라는 오류가 뜨는데
+이건 이전 커밋이 바뀌거나 했을 때 뜨는 오류이다
 
-→ git push origin master의 뜻은 대략
+```
+git fetch
+```
 
-"내가 등록한 원격 저장소(origin)안에서 master 브랜치로 push하겠다" 로 해석할 수 있다
+위와 같이 사용해서 github에 있는 파일을 가져오거나
 
-(브랜치는 git에서 협업, 버전 관리를 위해 '가지'를 따서 작업할 때 사용되는 개념이다)
+```
+git push -u origin +master
+```
 
-> git remote add <등록 이름(대부분 origin으로 함)> <원격 저장소 주소>
+위와 같이 사용해서 강제로 push 하면 된다
 
-이렇게 명령어를 사용하면 내PC의 로컬 git 프로젝트와 원격 저장소가 연동된다
 
 [더 자세한 내용](https://rogerdudler.github.io/git-guide/index.ko.html)<br>
 [더 자세한 내용2](https://webdevtechblog.com/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95-github-tutorials-4a63f31bb6a5)
 
-# 기존 저장소에 올리는 법
-
-> git remote add origin <주소>
-
-> git branch -M master
-
-> git push
-
 ---
+
 주소를 적다 갑자기 아래와 같은 오류가 뜰 수 있는데
 
 ```
@@ -71,9 +71,3 @@ fatal: remote origin already exists.
 remote를 취소하고 다시 주소를 add해주면 된다
 
 > git remote rm origin
-
----
-### err 1
-```! [rejected]        master -> master (fetch first)```
-
-[해결 방법](https://github.com/chanwoo00106/git_guide/blob/master/push_error.md)
