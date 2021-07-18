@@ -4,11 +4,11 @@
 # 추가와 확정
 변경된 파일을 아래의 명령어로 추가할 수 있다
 
-> git add <파일이름>
+> git add <파일 이름>
 
 그리고 변경된 파일을 확정하려면 아래 명령어를 입력
 
-> git commit -m "이번 확정본에 대한 설명"
+> git commit -m "이번 commit에 대한 설명"
 
 이렇게 하면 변경된 파일이 <strong>HEAD</strong>에 반영이 됨
 
@@ -18,7 +18,7 @@
 
 > git log HEAD^
 
-가끔 가다 '^' 문자를 필터링 하는경우가 있어서 아래와 같이 적어준다
+가끔가다 '^' 문자를 필터링하는 경우가 있어서 아래와 같이 적어준다
 
 > git reset --soft HEAD~1
 
@@ -34,13 +34,13 @@
 git remote add origin <git 주소>
 ```
 
-그 다음부터는 아래와 같이만 해 주면 된다
+그다음부터는 아래와 같이만 해 주면 된다
 
 ```
 git push
 ```
 
-가끔 push 하다가 rejected 어쩌고 라는 오류가 뜨는데
+가끔 push 하다가 rejected 어쩌고 하는 오류가 뜨는데
 이건 이전 커밋이 바뀌거나 했을 때 뜨는 오류이다
 
 ```
@@ -68,6 +68,6 @@ fatal: remote origin already exists.
 ```
 
 이건 이미 remote가 되어 있어서 그런다.
-remote를 취소하고 다시 주소를 add해주면 된다
+remote를 취소하고 다시 주소를 add 해주면 된다
 
 > git remote rm origin
