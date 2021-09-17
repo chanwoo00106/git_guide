@@ -40,8 +40,8 @@ git remote add origin <git 주소>
 git push
 ```
 
-가끔 push 하다가 rejected 어쩌고 하는 오류가 뜨는데
-이건 이전 커밋이 바뀌거나 했을 때 뜨는 오류이다
+가끔 push 하다가 rejected 어쩌고 하는 오류가 뜨는데<br>
+github와 local의 커밋이 달라서 뜨는 오류이다
 
 ```
 git fetch
@@ -71,3 +71,16 @@ fatal: remote origin already exists.
 remote를 취소하고 다시 주소를 add 해주면 된다
 
 > git remote rm origin
+
+## branch 생성
+
+```
+git branch <branchname>
+```
+
+이렇게 하면 branch가 생성이 되고
+
+```
+git checkout <branchname>
+```
+위와 같이 하면 branch를 전환할 수 있다
