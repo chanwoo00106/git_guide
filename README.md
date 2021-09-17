@@ -90,3 +90,9 @@ git branch <branchname>
 git checkout <branchname>
 ```
 위와 같이 하면 branch를 전환할 수 있다
+
+```
+git branch -d <branchname>
+```
+
+마지막으로 위와 같이 하면 branch를 삭제 할 수 있다
