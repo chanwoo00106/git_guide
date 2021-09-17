@@ -72,7 +72,13 @@ remote를 취소하고 다시 주소를 add 해주면 된다
 
 > git remote rm origin
 
-## branch 생성
+## branch
+
+```
+git branch
+```
+
+위와 같이 하면 branch 목록을 볼 수 있다
 
 ```
 git branch <branchname>
