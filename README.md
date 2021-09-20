@@ -2,29 +2,38 @@
 
 
 # 추가와 확정
-변경된 파일을 아래의 명령어로 추가할 수 있다
+
+변경된 파일을 아래의 명령어로 추가할 수 있다<br>
+추가를 하면 working directory 즉 내가 코드를 작성하는 폴더작성하고 있는 내용이<br>
+staging area로 저장이 된다.
 
 > git add <파일 이름>
 
-그리고 변경된 파일을 확정하려면 아래 명령어를 입력
+그리고 변경된 파일을 확정하려면 아래 명령어를 치면 된다.
+commit을 하면 staging area에 있는 내용이 repository로 저장이 된다
 
 > git commit -m "이번 commit에 대한 설명"
 
 이렇게 하면 변경된 파일이 <strong>HEAD</strong>에 반영이 됨
 
+<img src="https://i.stack.imgur.com/naws3.png">
+
 # 커밋 취소
 
-아래와 같이 적어주면 가장 최근 커밋을 취소해 준다
+`git reset`이라는 명령어가 있는데 3가지 옵션이 있다
 
-> git log HEAD^
+- --hard 옵션<br>
+    working directory, staging area 그리고 repository 가 모두 바뀐다. 즉 커밋 이후로 한 작업이 전부 사라진다.
 
-가끔가다 '^' 문자를 필터링하는 경우가 있어서 아래와 같이 적어준다
+- --mixed 옵션
+    repository 그리고 staging area가 바뀐다.
 
-> git reset --soft HEAD~1
+- --soft 옵션<br>
+    repository만이 원하는 커밋을 가리킴, Working directory 와 staging area는 그대로이다.
 
-또는
+> git reset `옵션` `특정 커밋 아이디 또는 HEAD^`
 
-> git log "HEAD^"
+위와 같은 형식으로 적으면 됨
 
 # 변경된 내용 올리기
 
